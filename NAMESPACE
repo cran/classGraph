@@ -1,0 +1,11 @@
+export("classTree",
+       "class2Graph",
+       "bGraph", "mRagraph",
+       "subClasses", "superClasses",
+       "numOutEdges", "leaves", # "is.leaf",
+       "plotRag", ".optRagargs"
+       )
+
+import(methods)
+import(graph)
+import(Rgraphviz)
