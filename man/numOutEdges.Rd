@@ -18,9 +18,15 @@ numOutEdges(g)
   out'' from each node.
 }
 \author{Martin Maechler}
-\seealso{\code{\link{leaves}}; further \code{\link[graph]{edgeL}} on
-  which this function is built.}
+\seealso{\code{\link[graph]{edgeL}} on which this function is built, and
+  \code{\link[graph]{leaves}}, both from package \pkg{graph}.
+}
 \examples{
+## Simplistic leaves() definition for *directed graphs* :
+## { compare with graph::leaves() }
+is.leaf <- function(g) numOutEdges(g) == 0 ## (also exists hiddenly..)
+Leaves  <- function(g) nodes(g)[is.leaf(g)]
+Leaves(bGraph(4, mode = "directed"))
 }
 \keyword{graphs}
 \keyword{utilities}

@@ -26,8 +26,8 @@ superClasses <- function(x) {
     ans  <- vector("list", length = length(clss))
     for( i in 1:length(clss)) {
         v  <- clss[i]
-        attr(v, "package") = pkgNames[i]
-        ans[[i]] = v
+        attr(v, "package") <- pkgNames[i]
+        ans[[i]] <- v
     }
     return(ans)
 }

@@ -26,7 +26,9 @@ numOutEdges <- function(g)
 }
 
 is.leaf <- function(g) numOutEdges(g) == 0
-leaves  <- function(g) nodes(g)[is.leaf(g)]
+## The graph package now defines a leaves() generic {w/ degree.dir}
+##     leaves  <- function(g) nodes(g)[is.leaf(g)]
+
 
 bGraph <- function(n, root = "Mom",
                    leaves = paste(l.prefix, seq(length=n), sep=""),
@@ -78,8 +80,11 @@ mRagraph <- function(gr, lType,
         stop("The graph to be plotted is not a valid graph structure")
     if (missing(lType))
         lType <- "dot"
+
     ng <- nodes(gr)
-    nonVirtual <- leaves(gr) ## the leaves are *non*-virtual classes
+##     leaves  <- function(g) nodes(g)[is.leaf(g)]
+##     nonVirtual <- leaves(gr) ## the leaves are *non*-virtual classes
+    nonVirtual <- ng[is.leaf(gr)] ## the leaves are *non*-virtual classes
 
     r <- abbrMatrixcl(ng)
 

@@ -2,7 +2,8 @@
 \alias{subClasses}
 \title{All Subclasses of a Given S4 Class}
 \description{
-
+  Retugn all subclasses of a given S4 class; either only the direct sub
+  classes are also those \dQuote{further away} (distance \eqn{> 1}).
 }
 \usage{
 subClasses(Cl, directOnly = TRUE, complete = TRUE, ...)
@@ -15,36 +16,17 @@ subClasses(Cl, directOnly = TRUE, complete = TRUE, ...)
   \item{\dots}{........}%FIXME
 }
 \value{
-  ~Describe the value returned
-  If it is a LIST, use
-  \item{comp1 }{Description of 'comp1'}
-  \item{comp2 }{Description of 'comp2'}
-  ...
+  a \code{\link{character}} vector of class names.
 }
 \author{Martin Maechler}
 \seealso{\code{\link{superClasses}}; \code{\link[methods]{Classes}} in
   general.}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function (Cl, directOnly = TRUE, complete = TRUE, ...)
-{
-    if (isClassDef(Cl)) {
-        cDef <- Cl
-        Cl <- cDef@className
-    }
-    else {
-        cDef <- if (complete)
-            getClass(Cl)
-        else getClassDef(Cl)
-    }
-    subs <- showExtends(cDef@subclasses, printTo = FALSE)
-    if (directOnly)
-        subs$what[subs$how == "directly"]
-    else subs$what
-  }
+subClasses("graph") # -> the direct ones
+subClasses("graph", directOnly = FALSE) # the same: has only direct subclasses
+if(require("Matrix")) {
+  print( subClasses("sparseMatrix") )
+  print( subClasses("sparseMatrix", directOnly = FALSE) )# much more
+}
 }
 \keyword{classes}

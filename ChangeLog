@@ -1,0 +1,18 @@
+2008-05-06  Martin Maechler  <maechler@stat.math.ethz.ch>
+
+	* DESCRIPTION (Version): 0.7-1
+
+	* R/Class-hier-fn.R (leaves): remove our definition, since "graph"
+	package has its own {more sophisticated} one.
+	* man/leaves.Rd : no longer needed
+
+	* man/subClasses.Rd: \value{} & another example
+
+	* man/numOutEdges.Rd: \example{} with Leaves(), our former leaves().
+
+	* man/bGraph.Rd: add examples
+
+2007-02-10  Martin Maechler  <maechler@stat.math.ethz.ch>
+
+	* DESCRIPTION (Version): 0.7-0,  first release to CRAN
+
