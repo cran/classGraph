@@ -3,7 +3,7 @@
 \title{For each Node of a Directed Graph give the Number Outgoing Edges}
 \description{
   In a directed or undirected graph, for each node count the number of
-  edges \dQuote{leaving} that nodes.}
+  edges \dQuote{leaving} that nodes.
 }
 \usage{
 numOutEdges(g)

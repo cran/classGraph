@@ -1,3 +1,7 @@
+2009-01-15  Martin Maechler  <maechler@stat.math.ethz.ch>
+
+	* man/numOutEdges.Rd: rm extraneous "}" found by Rd_parse
+
 2008-05-06  Martin Maechler  <maechler@stat.math.ethz.ch>
 
 	* DESCRIPTION (Version): 0.7-1

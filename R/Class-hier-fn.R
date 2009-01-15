@@ -103,15 +103,16 @@ mRagraph <- function(gr, lType,
     nAtt$fillcolor["pMatrix"] <- "thistle"
     nAtt $   color["pMatrix"] <- "turquoise"
 
-    if(getOption("verbose")) { cat("mplot(): nodeAttrs: "); str(nAtt) }
+    if(getOption("verbose")) { cat("mRagraph(): nodeAttrs: "); str(nAtt) }
 
-    ### This is +- ==  method("plot", "graph"):
+    ### Returns the "layouted graph";  is +- ==  method("plot", "graph"):
     agopen(gr, name = "", layout = TRUE, layoutType = lType,
            attrs = list(), nodeAttrs = nAtt, edgeAttrs = list(),
            subGList = list(), recipEdges = "combined")
 }
 
-## a bit more than selectMethod("plot", "Ragraph") -- but building on that
+## plotRag() : a bit more than selectMethod("plot", "Ragraph")
+##   --        but building on that
 .optRagargs <- function(side = 1, adj = 0.05, cex = 0.75, line = 3)
     list(side = side, adj = adj, cex = cex, line = line)
 
