@@ -1,3 +1,9 @@
+2009-11-18  Martin Maechler  <maechler@stat.math.ethz.ch>
+
+	* DESCRIPTION (Version, Date): 0.7-3
+
+	* man/mRagraph.Rd: Ragraph class is in 'Rgraphviz'.
+
 2009-01-15  Martin Maechler  <maechler@stat.math.ethz.ch>
 
 	* man/numOutEdges.Rd: rm extraneous "}" found by Rd_parse

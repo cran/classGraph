@@ -32,10 +32,9 @@ mRagraph(gr, lType, fixedsize = FALSE,
 %   ~~ If necessary, more details than the description above ~~
 % }
 \value{
-  an object of class \code{\link[graph:Ragraph-class]{Ragraph}},
+  an object of class \code{\link[Rgraphviz:Ragraph-class]{Ragraph}},
   produced by an appropriate call to \code{\link[Rgraphviz]{agopen}}.
 }
-% \references{ ~put references to the literature/web site here ~ }
 \author{Martin Maechler}
 \seealso{the customized plotting function \code{\link{plotRag}}.}
 \examples{
