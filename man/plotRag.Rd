@@ -1,5 +1,6 @@
 \name{plotRag}
 \alias{plotRag}
+\alias{.optRagargs}
 \title{Plot an Ragraph (using Rgraphviz)}
 \description{
   Plot an \code{\link[Rgraphviz:Ragraph-class]{Ragraph}}
@@ -10,6 +11,8 @@
 }
 \usage{
 plotRag(ragr, sub, subArgs = .optRagargs(), ...)
+
+.optRagargs(side = 1, adj = 0.05, cex = 0.75, line = 3)
 }
 \arguments{
   \item{ragr}{an object of class
@@ -17,12 +20,18 @@ plotRag(ragr, sub, subArgs = .optRagargs(), ...)
     \pkg{Rgraphviz} package).}
   \item{sub}{a \dQuote{footnote} or subtitle to be added to
     \code{plot(ragr,...)}.  By default gives the number of nodes and edges.}
-  \item{subArgs}{ ~~Describe \code{subArgs} here~~ }
+  \item{subArgs}{a \code{\link{list}} of arguments to
+    \code{\link{mtext}}, typically from calling \code{.optRagargs()}.}
   \item{\dots}{further arguments passed to \code{plot(.)}, i.e., the
     plot method for \code{Ragraph} objects.}
+  \item{side, adj, cex, line}{arguments passed to \code{\link{mtext}()}
+    with non-standard defaults in order to place \code{sub}, the
+    \dQuote{sub title}.}
 }
 \author{Martin Maechler}
-\seealso{\code{\link{mRagraph}}, \code{\link[Rgraphviz:Ragraph-class]{Ragraph}} ~~~ }
+\seealso{\code{\link{mRagraph}},
+  \code{\link[Rgraphviz:Ragraph-class]{Ragraph}}.
+}
 \examples{
   if(require("Matrix")) {
     trMatrix <- classTree("Matrix")
