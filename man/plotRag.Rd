@@ -1,7 +1,8 @@
 \name{plotRag}
+\title{Plot an Ragraph (using Rgraphviz)}
+\alias{plot}% we re-export the S4 generic
 \alias{plotRag}
 \alias{.optRagargs}
-\title{Plot an Ragraph (using Rgraphviz)}
 \description{
   Plot an \code{\link[Rgraphviz:Ragraph-class]{Ragraph}}
   object (a kind of \dQuote{laid-out} graph, from package

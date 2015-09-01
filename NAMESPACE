@@ -1,11 +1,28 @@
+## Partly produced via  codetoolsBioC::writeNamespaceImports()
+## but that *misses* the  importClassesFrom(.) !
+
+importFrom("graphics", mtext, par)
+importFrom("methods", as, getAllSuperClasses, getClass, getClassDef,
+           is, isClassDef, new, showExtends)
+importFrom("utils", str)
+importFrom("stats", "setNames")
+
+importFrom("graph", ftM2graphNEL, validGraph,
+	   plot)# the S4 generic {importMeth... below is *not* sufficient!}
+importClassesFrom("graph", graphNEL)
+importMethodsFrom("graph", edgeL, join, nodes, numNodes, plot)
+
+importFrom("Rgraphviz", agopen, makeNodeAttrs)
+importClassesFrom("Rgraphviz", Ragraph)
+importMethodsFrom("Rgraphviz", plot)
+
+## Re-export - S4 generic  {so it works with our objects, even when graph/graphViz are not attached}
+export(plot)
+
 export("classTree",
        "class2Graph",
        "bGraph", "mRagraph",
        "subClasses", "superClasses",
-       "numOutEdges", "leaves", # "is.leaf",
+       "numOutEdges", # "is.leaf",
        "plotRag", ".optRagargs"
        )
-
-import(methods)
-import(graph)
-import(Rgraphviz)

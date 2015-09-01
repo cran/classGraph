@@ -45,7 +45,7 @@ mRagraph(gr, lType, fixedsize = FALSE,
     RtrM # (the show method will hopefully improve)
     str(RtrM, max=2) # shows a bit more
 
-    plot(RtrM)
+    plot(RtrM)# 'graph' method -> using 'Rgraphviz' package
   }
 }
 \keyword{graphs}

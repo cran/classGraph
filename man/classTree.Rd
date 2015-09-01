@@ -15,15 +15,14 @@ classTree(Cl, all = FALSE, ...)
   \item{\dots}{ ....}
 }
 % \details{
-%   ~~ If necessary, more details than the description above ~~
 % }
 \value{
   an \R object inheriting from class \code{\link[graph:graph-class]{graph}}.
 }
-%% \references{ ~put references to the literature/web site here ~ }
 \author{Martin Maechler}
 \seealso{\code{\link{class2Graph}}, ...} %% TODO
 \examples{
+## Using classes and methods from package 'graph' :
 trGclass <- classTree("graph")
 as(trGclass, "matrix")
 plot(trGclass) # using package 'Rgraphviz'

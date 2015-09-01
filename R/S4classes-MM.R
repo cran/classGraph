@@ -60,12 +60,12 @@ class2Graph <-
 
     ##handle the one node graph separately
     if( length(superClasses) == 0 ) {
-        eL  <- list(numeric(0)); names(eL) = cname
+        eL  <- setNames(list(numeric(0)), cname)
         return(new("graphNEL", edgeL = eL, nodes = cname))
     }
     ##otherwise build a simple incidence matrix
     nN  <- length(superClasses)+1
-    rmat  <- matrix(0, nr = nN, nc = nN)
+    rmat  <- matrix(0, nN, nN)
     dimnames(rmat) <-
         list(c(cname, superClasses),
              c(cname, superClasses))

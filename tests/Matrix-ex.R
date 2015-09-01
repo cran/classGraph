@@ -4,7 +4,8 @@
 
 library(classGraph)
 
-library(Matrix)
+stopifnot(require("Matrix"),
+          require("graph"))
 
 allCl <- getClasses("package:Matrix")
 ## Those called "...Matrix" :

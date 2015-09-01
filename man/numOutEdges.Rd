@@ -25,7 +25,7 @@ numOutEdges(g)
 ## Simplistic leaves() definition for *directed graphs* :
 ## { compare with graph::leaves() }
 is.leaf <- function(g) numOutEdges(g) == 0 ## (also exists hiddenly..)
-Leaves  <- function(g) nodes(g)[is.leaf(g)]
+Leaves  <- function(g) graph::nodes(g)[is.leaf(g)]
 Leaves(bGraph(4, mode = "directed"))
 }
 \keyword{graphs}

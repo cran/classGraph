@@ -30,6 +30,8 @@ bGraph(n, root = "Mom",
   \code{\link[graph]{ftM2graphNEL}}.
 }
 \examples{
+require("graph") ## Using package 'graph' => plot() method (via package 'Rgraphviz'):
+
 (bg7 <- bGraph(7)) # 8 nodes {Mom, D1..D7}; 7 edges
 plot(bg7) # draws the graph
 

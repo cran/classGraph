@@ -1,0 +1,15 @@
+35076ecf53c691c8a648d6c73832e017 *ChangeLog
+39dcf510e3da75a19f495b71f2fd61eb *DESCRIPTION
+fac66ad2219eb150ebc6436478196777 *NAMESPACE
+0ee3bb96a2b23c8e96f08ab7666f0e2a *R/Class-hier-fn.R
+7159be427c02779b4d430dc1db009d79 *R/S4classes-MM.R
+c98bd06603ddc6d4841af3f7baa4be5d *man/bGraph.Rd
+b328664f5ed526a108e7d11ab0516712 *man/class2Graph.Rd
+f6762fe3330233ac24954add554997a0 *man/classGraph-package.Rd
+74d051dbc973f996fe0c11465d2772f4 *man/classTree.Rd
+f1b9107e0cdb9bd56a1f3e162c37e0a7 *man/mRagraph.Rd
+c213fe6d875c7368f6be207aee76d65a *man/numOutEdges.Rd
+85185ef361cb0fa4cb9ad4a727ddf0d9 *man/plotRag.Rd
+d4b087ffc5f3a4e2992aee0d69d5151f *man/subClasses.Rd
+7b55375385c6c264ed3d20cd1ad4fc6e *man/superClasses.Rd
+a2ff4cbcb7b9c1f40e7e35236931f770 *tests/Matrix-ex.R
