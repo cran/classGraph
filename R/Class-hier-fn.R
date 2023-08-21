@@ -1,3 +1,8 @@
+if((Rv <- getRversion()) < "3.2.1") {
+    lengths <- function(x, use.names = TRUE)
+        vapply(x, length, 1L, USE.NAMES = use.names)
+}## R < 3.2.1
+
 subClasses <- function(Cl, directOnly = TRUE, complete = TRUE, ...)
 {
     ## utility for classTree():
@@ -21,8 +26,7 @@ numOutEdges <- function(g)
     ## Arguments: g: graph
     ## ----------------------------------------------------------------------
     ## Author: Martin Maechler, Date:  8 Feb 2007, 22:59
-    el <- sapply(edgeL(g), `[[`, "edges")
-    sapply(el, length)
+    lengths( sapply(edgeL(g), `[[`, "edges") )
 }
 
 is.leaf <- function(g) numOutEdges(g) == 0

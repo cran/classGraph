@@ -1,11 +1,12 @@
-35076ecf53c691c8a648d6c73832e017 *ChangeLog
-39dcf510e3da75a19f495b71f2fd61eb *DESCRIPTION
+64e45876f46ddedd1686bcaac753962e *ChangeLog
+96f0f7db11b69887189bb97b4501b7e9 *DESCRIPTION
 fac66ad2219eb150ebc6436478196777 *NAMESPACE
-0ee3bb96a2b23c8e96f08ab7666f0e2a *R/Class-hier-fn.R
+cb8e505e9528f45750ded883f0f0df3f *R/Class-hier-fn.R
 7159be427c02779b4d430dc1db009d79 *R/S4classes-MM.R
+879bdc893e6f3e01f83d4bd29579d25f *build/partial.rdb
 c98bd06603ddc6d4841af3f7baa4be5d *man/bGraph.Rd
 b328664f5ed526a108e7d11ab0516712 *man/class2Graph.Rd
-f6762fe3330233ac24954add554997a0 *man/classGraph-package.Rd
+bbb6b1b873d729cf4a98e20247f645ca *man/classGraph-package.Rd
 74d051dbc973f996fe0c11465d2772f4 *man/classTree.Rd
 f1b9107e0cdb9bd56a1f3e162c37e0a7 *man/mRagraph.Rd
 c213fe6d875c7368f6be207aee76d65a *man/numOutEdges.Rd

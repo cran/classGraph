@@ -1,11 +1,23 @@
+2023-08-21  Martin Maechler  <maechler@stat.math.ethz.ch>
+
+	* DESCRIPTION (Version): 0.7-6
+
+2018-05-18  Martin Maechler  <maechler@stat.math.ethz.ch>
+
+	* man/classGraph-package.Rd: use '\packageDESCRIPTION'
+
+2018-04-30  Martin Maechler  <maechler@stat.math.ethz.ch>
+
+	* R/Class-hier-fn.R (numOutEdges): use `lengths()`.
+
 2014-11-25  Martin Maechler  <maechler@stat.math.ethz.ch>
 
-	* DESCRIPTION (Version): 0.7-5
+	* DESCRIPTION (Version): 0.7-5 -- CRAN publication 2015-09-01
 	* DESCRIPTION (Depends, Imports): every dependency only *once*
 
 2010-08-11  Martin Maechler  <maechler@stat.math.ethz.ch>
 
-	* DESCRIPTION (Version): 0.7-4
+	* DESCRIPTION (Version): 0.7-4 -- CRAN publication: 2010-08-11
 
 	* man/plotRag.Rd: improved.
 
@@ -35,5 +47,5 @@
 
 2007-02-10  Martin Maechler  <maechler@stat.math.ethz.ch>
 
-	* DESCRIPTION (Version): 0.7-0,  first release to CRAN
+	* DESCRIPTION (Version): 0.7-0,  first release to CRAN on 2007-06-28
 

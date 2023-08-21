@@ -8,16 +8,10 @@
   visualization methods to visualize inheritance graphs of S4 classes.
 }
 \details{
-%% MM This should be auto-updated from DESCRIPTION !
-\tabular{ll}{
-Package: \tab classGraph\cr
-Type: \tab Package\cr
-Version: \tab 0.7-0\cr
-Date: \tab 2007-02-10\cr
-License: \tab GPL\cr
-}
-% ~~ An overview of how to use the package, including the most important ~~
-% ~~ functions ~~
+  %  The DESCRIPTION file:
+  \packageDESCRIPTION{classGraph}
+
+  \packageIndices{classGraph}
 }
 \author{Martin Maechler}
 \seealso{
