@@ -1,9 +1,9 @@
-64e45876f46ddedd1686bcaac753962e *ChangeLog
-96f0f7db11b69887189bb97b4501b7e9 *DESCRIPTION
+a4f657a2e505c26fe6b7e1c5b04b00bd *ChangeLog
+12088dd10de38625538e5b0baab65ead *DESCRIPTION
 fac66ad2219eb150ebc6436478196777 *NAMESPACE
 cb8e505e9528f45750ded883f0f0df3f *R/Class-hier-fn.R
 7159be427c02779b4d430dc1db009d79 *R/S4classes-MM.R
-879bdc893e6f3e01f83d4bd29579d25f *build/partial.rdb
+8fab876e630b9cf68fc08a6b4e323eb0 *build/partial.rdb
 c98bd06603ddc6d4841af3f7baa4be5d *man/bGraph.Rd
 b328664f5ed526a108e7d11ab0516712 *man/class2Graph.Rd
 bbb6b1b873d729cf4a98e20247f645ca *man/classGraph-package.Rd
